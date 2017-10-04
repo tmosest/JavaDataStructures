@@ -1,16 +1,16 @@
 package com.simple.collection.impl;
 
-import com.simple.collection.IListADT;
+import com.simple.collection.ListADT;
 
 /**
  * Created by akeem on 10/3/17.
  */
-public class ListADT <T> implements IListADT<T> {
+public class ResizingList <T> implements ListADT<T> {
 
     private T[] t;
     private int size;
 
-    public ListADT () {
+    public ResizingList () {
         size = 0;
         t  = (T[]) new Object [10];
     }

@@ -1,6 +1,6 @@
 package com.simple.collection;
 
-import com.simple.collection.impl.ListADT;
+import com.simple.collection.impl.ResizingList;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -9,25 +9,25 @@ import org.junit.Test;
 /**
  * Created by akeem on 10/3/17.
  */
-public class ListADTTest {
+public class ResizingListTest {
 
 
-    IListADT<Double> doubleArray;
-    IListADT<Integer> intArray;
-    IListADT<String> stringArray;
+    ListADT<Double> doubleArray;
+    ListADT<Integer> intArray;
+    ListADT<String> stringArray;
 
     @Before
     public void setUp() {
-        doubleArray = new ListADT<Double>();
-        intArray = new ListADT<Integer>();
-        stringArray = new ListADT<String>();
+        doubleArray = new ResizingList<Double>();
+        intArray = new ResizingList<Integer>();
+        stringArray = new ResizingList<String>();
     }
 
     @After
     public void tearDown() {
-        doubleArray = new ListADT<Double>();
-        intArray = new ListADT<Integer>();
-        stringArray = new ListADT<String>();
+        doubleArray = new ResizingList<Double>();
+        intArray = new ResizingList<Integer>();
+        stringArray = new ResizingList<String>();
     }
 
     @Test

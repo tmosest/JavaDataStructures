@@ -4,3 +4,6 @@ target/*
 *.claspath
 bin/*
 .idea/*
+/target/
+.classpath
+.settings/
