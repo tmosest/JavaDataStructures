@@ -1,23 +1,18 @@
 package com.simple.collection.impl;
 
 import com.simple.collection.AbstractList;
-import com.simple.collection.ListADT;
+import com.simple.collection.StackADT;
 
-import java.util.Comparator;
+import java.util.List;
 
 /**
  * Created by akeem on 10/5/17.
  */
-public class ResizingList <T> implements ListADT <T> {
+public class StackListImpl <T> implements StackADT<T> {
 
     @Override
     public boolean isEmpty() {
         return false;
-    }
-
-    @Override
-    public int indexOf(T t) {
-        return 0;
     }
 
     @Override
@@ -31,11 +26,6 @@ public class ResizingList <T> implements ListADT <T> {
     }
 
     @Override
-    public T get(int index) {
-        return null;
-    }
-
-    @Override
     public void push(T t) {
 
     }
@@ -43,16 +33,6 @@ public class ResizingList <T> implements ListADT <T> {
     @Override
     public int size() {
         return 0;
-    }
-
-    @Override
-    public boolean remove(T t) {
-        return false;
-    }
-
-    @Override
-    public void sort(Comparator<? super T> c) {
-
     }
 
     @Override
